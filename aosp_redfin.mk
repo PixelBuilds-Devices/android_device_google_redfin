@@ -49,6 +49,11 @@ $(call inherit-product, device/google/redfin/device-redfin.mk)
 $(call inherit-product-if-exists, vendor/google_devices/redfin/proprietary/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/google_devices/redfin/prebuilts/device-vendor-redfin.mk)
 
+# Inherit some common pb stuff.
+$(call inherit-product, vendor/pb/config/common_full_phone.mk)
+
+include device/google/redfin/device-custom.mk
+
 # Keep the VNDK APEX in /system partition for REL branches and Vendor Freeze targets
 # as these are expected to have stable API/ABI surfaces.
 ifneq (REL,$(PLATFORM_VERSION_CODENAME))
@@ -64,7 +69,16 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 # PRODUCT_RESTRICT_VENDOR_FILES := all
 
 PRODUCT_MANUFACTURER := Google
-PRODUCT_BRAND := Android
+PRODUCT_BRAND := google
 PRODUCT_NAME := aosp_redfin
 PRODUCT_DEVICE := redfin
-PRODUCT_MODEL := AOSP on redfin
+PRODUCT_MODEL := Pixel 5
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_WIDTH := 1080
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_PRODUCT=redfin
+
+$(call inherit-product, vendor/google/redfin/redfin-vendor.mk)
