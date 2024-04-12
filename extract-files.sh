@@ -55,8 +55,14 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+<<<<<<< HEAD
     product/etc/felica/common.cfg)
         sed -i -e '$a00000018,1' -e '/^00000014/d' -e '/^00000015/d' "${2}"
+=======
+    # Fix xml version
+    product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml)
+        sed -i 's/xml version="2.0"/xml version="1.0"/' "${2}"
+>>>>>>> parent of c5e5aa7 (redfin: Remove unused qcom blobs)
         ;;
     # Fix typo in qcrilmsgtunnel whitelist
     product/etc/sysconfig/nexus.xml)
