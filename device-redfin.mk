@@ -182,6 +182,13 @@ endif
 PRODUCT_COPY_FILES += \
     device/google/redfin/displayconfig/display_id_4630946523002478721.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946523002478721.xml
 
+# OMX
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-impl \
+    android.hardware.media.omx@1.0-service \
+    libstagefright_omx.vendor \
+    libavservices_minijail \
+    libavservices_minijail.vendor
 
 # Audio effects
 PRODUCT_PACKAGES += \
