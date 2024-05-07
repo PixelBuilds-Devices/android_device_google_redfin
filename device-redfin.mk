@@ -182,6 +182,10 @@ endif
 PRODUCT_COPY_FILES += \
     device/google/redfin/displayconfig/display_id_4630946523002478721.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946523002478721.xml
 
+# Refresh rate override feature
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.surface_flinger.enable_frame_rate_override=true
+
 # OMX
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-impl \
