@@ -1,0 +1,13 @@
+[
+  {
+    "repository": "android_device_google_redbull",
+    "target_path": "device/google/redbull",
+    "branch":"unity"
+  },
+  {
+    "repository":"android_vendor_google_redfin",
+    "target_path":"vendor/google/redfin",
+    "branch":"unity",
+    "remote":"pixelbuilds-blobs-gitlab"
+   }
+]
