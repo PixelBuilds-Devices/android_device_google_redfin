@@ -182,9 +182,10 @@ endif
 PRODUCT_COPY_FILES += \
     device/google/redfin/displayconfig/display_id_4630946523002478721.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946523002478721.xml
 
-# Refresh rate override feature
+# SF features
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.surface_flinger.enable_frame_rate_override=true
+    ro.surface_flinger.enable_frame_rate_override=true \
+    debug.sf.enable_small_dirty_detection=true
 
 # OMX
 PRODUCT_PACKAGES += \
