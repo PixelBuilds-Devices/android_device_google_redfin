@@ -246,10 +246,12 @@
     <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
         <item>10</item> <!-- 33% UI brightness -->
         <item>14</item> <!-- 40% UI brightness -->
+        <item>18</item>
     </integer-array>
     <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
         <item>-1</item>
         <item>50</item>
+        <item>70</item>
     </integer-array>
 
     <!-- default refresh rate in the zone defined by birghtness and ambient thresholds -->
