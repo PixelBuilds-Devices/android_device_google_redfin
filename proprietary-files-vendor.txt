@@ -82,7 +82,6 @@ vendor/bin/subsystem_ramdump
 vendor/bin/test_diag
 vendor/bin/tftp_server
 vendor/bin/time_daemon
-vendor/bin/twoshay
 vendor/bin/vendor.qti.qspmhal@1.0-service
 vendor/bin/xtra-daemon
 vendor/dsp/adsp/AlacDecoderModule.so.1
@@ -316,7 +315,6 @@ vendor/etc/init/rebootescrow-citadel.rc
 vendor/etc/init/rlsservice.rc
 vendor/etc/init/shsusrd.rc
 vendor/etc/init/ssgtzd.rc
-vendor/etc/init/twoshay.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/etc/init/vendor.google.google_battery-default.rc
 vendor/etc/init/vendor.google.radioext@1.0-service.rc
@@ -416,7 +414,6 @@ vendor/etc/sensors/sns_reg_config
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
 vendor/etc/thermal.mps
-vendor/etc/twoshay_config.json
 vendor/etc/vintf/manifest/android.hardware.authsecret-service.citadel.xml
 vendor/etc/vintf/manifest/android.hardware.confirmationui@1.0-service-google.xml
 vendor/etc/vintf/manifest/android.hardware.identity.strongbox.xml
@@ -1474,7 +1471,6 @@ vendor/lib64/libthermallistener.so
 vendor/lib64/libthreadutils.so
 vendor/lib64/libtime_genoff.so
 vendor/lib64/libtinyxml2_1.so
-vendor/lib64/libtouchflow.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/libvideooptfeature.so
