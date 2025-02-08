@@ -187,14 +187,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.enable_frame_rate_override=true \
     debug.sf.enable_small_dirty_detection=true
 
-# OMX
-PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl \
-    android.hardware.media.omx@1.0-service \
-    libstagefright_omx.vendor \
-    libavservices_minijail \
-    libavservices_minijail.vendor
-
 # Audio effects
 PRODUCT_PACKAGES += \
     libqcomvoiceprocessingdescriptors
