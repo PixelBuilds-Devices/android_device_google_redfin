@@ -2,7 +2,7 @@
   {
     "repository": "android_device_google_redbull",
     "target_path": "device/google/redbull",
-    "branch":"infinity"
+    "branch":"infinity-oss"
   },
   {
     "repository":"android_vendor_google_redfin",
